@@ -1,7 +1,13 @@
 const Sequelize = require('sequelize');
-const db = new Sequelize('school', 'postgres', 'osaka1994', {
-  host: 'localhost',
-  dialect: 'postgres'
+const db = new Sequelize(process.env.DATABASE_URL, {
+  dialect: "postgres",
+  protocol: "postgres",
+  dialectOptions: {
+    ssl: {
+      sslmode: 'require',
+      rejectUnauthorized: false
+    }
+  }
 });
 
 const Campus = db.define('campus', {
