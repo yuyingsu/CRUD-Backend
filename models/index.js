@@ -99,4 +99,4 @@ Student.sync().then(() => {
 module.exports = {
     Campus,
     Student
-  }
+  } 
