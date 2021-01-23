@@ -26,7 +26,7 @@ module.exports = {
     return Campus
       .create({
         name: req.body.name,
-        image_url: req.body.url,
+        image_url: req.body.image_url,
         address: req.body.address,
         description: req.body.description
       })

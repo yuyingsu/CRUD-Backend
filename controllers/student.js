@@ -28,7 +28,7 @@ module.exports = {
         first_name: req.body.first_name,
         last_name: req.body.last_name,
         email: req.body.email,
-        image_url: req.body.url,
+        image_url: req.body.image_url,
         gpa: req.body.gpa,
         campus_id:req.body.campus_id
       })
