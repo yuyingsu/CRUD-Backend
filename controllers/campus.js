@@ -46,7 +46,7 @@ module.exports = {
         return campus
           .update({
             name: req.body.name || campus.name,
-            image_url: req.body.url || campus.image_url,
+            image_url: req.body.image_url || campus.image_url,
             address: req.body.address || campus.address,
             description: req.body.description || campus.description
           })
