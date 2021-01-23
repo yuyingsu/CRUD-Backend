@@ -50,7 +50,7 @@ module.exports = {
             first_name: req.body.first_name || student.first_name,
             last_name: req.body.last_name || student.last_name,
             email: req.body.email || student.email,
-            image_url: req.body.url || student.url,
+            image_url: req.body.image_url || student.image_url,
             gpa: req.body.gpa || student.gpa,
             campus_id: req.body.campus_id
           })
